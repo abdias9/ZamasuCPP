@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="ZamasuCPP" Database="">
+  <Project Name="Zamasu" Path="Zamasu/Zamasu.project" Active="Yes"/>
+  <Project Name="ZamasuGtkExample" Path="ZamasuGtkExample/ZamasuGtkExample.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="Zamasu" ConfigName="Debug"/>
+      <Project Name="ZamasuGtkExample" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="Zamasu" ConfigName="Release"/>
+      <Project Name="ZamasuGtkExample" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

@@ -1,0 +1,104 @@
+.TH "Zamasu::Attribute" 3 "Tue Nov 15 2016" "Zamasu" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zamasu::Attribute \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Attribute\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBType\fP { \fBINTEGER\fP = 0, \fBDOUBLE\fP, \fBSTRING\fP, \fBBOOLEAN\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAttribute\fP (int value)"
+.br
+.ti -1c
+.RI "\fBAttribute\fP (double value)"
+.br
+.ti -1c
+.RI "\fBAttribute\fP (std::string value)"
+.br
+.ti -1c
+.RI "\fBAttribute\fP (bool value)"
+.br
+.ti -1c
+.RI "\fBAttribute\fP (short type, std::string value)"
+.br
+.ti -1c
+.RI "void \fBincrement\fP (double value)"
+.br
+.ti -1c
+.RI "int \fBas_int\fP ()"
+.br
+.ti -1c
+.RI "double \fBas_double\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBas_string\fP ()"
+.br
+.ti -1c
+.RI "bool \fBas_bool\fP ()"
+.br
+.ti -1c
+.RI "float \fBas_float\fP ()"
+.br
+.ti -1c
+.RI "short \fBget_type\fP ()"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZamasu::Attribute::Type\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIINTEGER \fP\fP
+.TP
+\fB\fIDOUBLE \fP\fP
+.TP
+\fB\fISTRING \fP\fP
+.TP
+\fB\fIBOOLEAN \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Attribute::Attribute (int value)"
+
+.SS "Attribute::Attribute (double value)"
+
+.SS "Attribute::Attribute (std::string value)"
+
+.SS "Attribute::Attribute (bool value)"
+
+.SS "Attribute::Attribute (short type, std::string value)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Attribute::as_bool ()"
+
+.SS "double Attribute::as_double ()"
+
+.SS "float Zamasu::Attribute::as_float ()"
+
+.SS "int Attribute::as_int ()"
+
+.SS "std::string Attribute::as_string ()"
+
+.SS "short Attribute::get_type ()"
+
+.SS "void Attribute::increment (double value)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zamasu from the source code\&.

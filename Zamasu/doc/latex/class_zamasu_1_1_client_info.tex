@@ -1,0 +1,184 @@
+\hypertarget{class_zamasu_1_1_client_info}{}\section{Zamasu\+:\+:Client\+Info Class Reference}
+\label{class_zamasu_1_1_client_info}\index{Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}}
+
+
+Basic Class with common attributes for Clients that will be communicating with \hyperlink{class_zamasu_1_1_server}{Server} instances.  
+
+
+
+
+{\ttfamily \#include $<$Client\+Info.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_zamasu_1_1_client_info_ab52cb5122b59b3dc9db20e2e30e9aab2}{Client\+Info} (const char $\ast$\hyperlink{class_zamasu_1_1_client_info_a97baa615785948d4f8bc1f31af9ed056}{hostname}, unsigned short \hyperlink{class_zamasu_1_1_client_info_a0072d23fd63fbd8e831556940bd69ce1}{port})
+\item 
+void \hyperlink{class_zamasu_1_1_client_info_a0e429323ed195a608d3fb26b219f218a}{set\+\_\+hostname} (const char $\ast$\hyperlink{class_zamasu_1_1_client_info_a97baa615785948d4f8bc1f31af9ed056}{hostname})
+\begin{DoxyCompactList}\small\item\em Set the this-\/$>$hostname attribute. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_zamasu_1_1_client_info_a0af8d3fb69b87eb62b2d529a766346fd}{get\+\_\+hostname} ()
+\begin{DoxyCompactList}\small\item\em Return \hyperlink{class_zamasu_1_1_client_info_a97baa615785948d4f8bc1f31af9ed056}{Client\+Info\+::hostname} attribute. \end{DoxyCompactList}\item 
+void \hyperlink{class_zamasu_1_1_client_info_ab98aef0169df530115e542b1316bf755}{set\+\_\+port} (unsigned short \hyperlink{class_zamasu_1_1_client_info_a0072d23fd63fbd8e831556940bd69ce1}{port})
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{class_zamasu_1_1_client_info_a0072d23fd63fbd8e831556940bd69ce1}{Client\+Info\+::port} attribute. \end{DoxyCompactList}\item 
+unsigned short \hyperlink{class_zamasu_1_1_client_info_aa49008dae5b4cd4eaec58bfe67ca3985}{get\+\_\+port} ()
+\begin{DoxyCompactList}\small\item\em Return \hyperlink{class_zamasu_1_1_client_info_a0072d23fd63fbd8e831556940bd69ce1}{Client\+Info\+::port} attribute. \end{DoxyCompactList}\item 
+bool \hyperlink{class_zamasu_1_1_client_info_abb8c083b54bf5205d273f3c11568371d}{operator==} (\hyperlink{class_zamasu_1_1_client_info}{Client\+Info} $\ast$client\+Info)
+\begin{DoxyCompactList}\small\item\em Compares to \hyperlink{class_zamasu_1_1_client_info}{Client\+Info} instances and return true if hostname and port are the same. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned long \hyperlink{class_zamasu_1_1_client_info_a5106c121a1051a35259bea2de5fd19a2}{get\+\_\+id\+\_\+count} ()
+\begin{DoxyCompactList}\small\item\em Get the number of \hyperlink{class_zamasu_1_1_client_info}{Client\+Info} instances. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long int \hyperlink{class_zamasu_1_1_client_info_a70071ec83c0aeca5dbfdfb539ac0c989}{id}
+\begin{DoxyCompactList}\small\item\em ID on server. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_zamasu_1_1_client_info_a97baa615785948d4f8bc1f31af9ed056}{hostname}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_zamasu_1_1_client}{Client}\textquotesingle{}s hostname. \end{DoxyCompactList}\item 
+unsigned short \hyperlink{class_zamasu_1_1_client_info_a0072d23fd63fbd8e831556940bd69ce1}{port}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_zamasu_1_1_client}{Client}\textquotesingle{}s port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned long \hyperlink{class_zamasu_1_1_client_info_a61083b34d39143869cda9bb1ca7aa323}{id\+\_\+count} = 1
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_zamasu_1_1_client_info}{Client\+Info} instance counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic Class with common attributes for Clients that will be communicating with \hyperlink{class_zamasu_1_1_server}{Server} instances. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}!Client\+Info@{Client\+Info}}
+\index{Client\+Info@{Client\+Info}!Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}}
+\subsubsection[{\texorpdfstring{Client\+Info(const char $\ast$hostname, unsigned short port)}{ClientInfo(const char *hostname, unsigned short port)}}]{\setlength{\rightskip}{0pt plus 5cm}Client\+Info\+::\+Client\+Info (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{hostname, }
+\item[{unsigned short}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_info_ab52cb5122b59b3dc9db20e2e30e9aab2}{}\label{class_zamasu_1_1_client_info_ab52cb5122b59b3dc9db20e2e30e9aab2}
+
+\begin{DoxyParams}{Parameters}
+{\em hostname} & (ex.\+: \char`\"{}localhost\char`\"{}) \\
+\hline
+{\em port} & (ex.\+: 9009) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}!get\+\_\+hostname@{get\+\_\+hostname}}
+\index{get\+\_\+hostname@{get\+\_\+hostname}!Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}}
+\subsubsection[{\texorpdfstring{get\+\_\+hostname()}{get_hostname()}}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Client\+Info\+::get\+\_\+hostname (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_info_a0af8d3fb69b87eb62b2d529a766346fd}{}\label{class_zamasu_1_1_client_info_a0af8d3fb69b87eb62b2d529a766346fd}
+
+
+Return \hyperlink{class_zamasu_1_1_client_info_a97baa615785948d4f8bc1f31af9ed056}{Client\+Info\+::hostname} attribute. 
+
+\begin{DoxyReturn}{Returns}
+Hostname value 
+\end{DoxyReturn}
+\index{Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}!get\+\_\+id\+\_\+count@{get\+\_\+id\+\_\+count}}
+\index{get\+\_\+id\+\_\+count@{get\+\_\+id\+\_\+count}!Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}}
+\subsubsection[{\texorpdfstring{get\+\_\+id\+\_\+count()}{get_id_count()}}]{\setlength{\rightskip}{0pt plus 5cm}static unsigned long Zamasu\+::\+Client\+Info\+::get\+\_\+id\+\_\+count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_zamasu_1_1_client_info_a5106c121a1051a35259bea2de5fd19a2}{}\label{class_zamasu_1_1_client_info_a5106c121a1051a35259bea2de5fd19a2}
+
+
+Get the number of \hyperlink{class_zamasu_1_1_client_info}{Client\+Info} instances. 
+
+\begin{DoxyReturn}{Returns}
+Number of instances. 
+\end{DoxyReturn}
+\index{Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}!get\+\_\+port@{get\+\_\+port}}
+\index{get\+\_\+port@{get\+\_\+port}!Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}}
+\subsubsection[{\texorpdfstring{get\+\_\+port()}{get_port()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short Client\+Info\+::get\+\_\+port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_info_aa49008dae5b4cd4eaec58bfe67ca3985}{}\label{class_zamasu_1_1_client_info_aa49008dae5b4cd4eaec58bfe67ca3985}
+
+
+Return \hyperlink{class_zamasu_1_1_client_info_a0072d23fd63fbd8e831556940bd69ce1}{Client\+Info\+::port} attribute. 
+
+\begin{DoxyReturn}{Returns}
+Port value 
+\end{DoxyReturn}
+\index{Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}!operator==@{operator==}}
+\index{operator==@{operator==}!Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}}
+\subsubsection[{\texorpdfstring{operator==(\+Client\+Info $\ast$client\+Info)}{operator==(ClientInfo *clientInfo)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Client\+Info\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Client\+Info} $\ast$}]{client\+Info}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_info_abb8c083b54bf5205d273f3c11568371d}{}\label{class_zamasu_1_1_client_info_abb8c083b54bf5205d273f3c11568371d}
+
+
+Compares to \hyperlink{class_zamasu_1_1_client_info}{Client\+Info} instances and return true if hostname and port are the same. 
+
+\begin{DoxyReturn}{Returns}
+True if the instances have same attributes. 
+\end{DoxyReturn}
+\index{Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}!set\+\_\+hostname@{set\+\_\+hostname}}
+\index{set\+\_\+hostname@{set\+\_\+hostname}!Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}}
+\subsubsection[{\texorpdfstring{set\+\_\+hostname(const char $\ast$hostname)}{set_hostname(const char *hostname)}}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+Info\+::set\+\_\+hostname (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{hostname}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_info_a0e429323ed195a608d3fb26b219f218a}{}\label{class_zamasu_1_1_client_info_a0e429323ed195a608d3fb26b219f218a}
+
+
+Set the this-\/$>$hostname attribute. 
+
+\index{Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}!set\+\_\+port@{set\+\_\+port}}
+\index{set\+\_\+port@{set\+\_\+port}!Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}}
+\subsubsection[{\texorpdfstring{set\+\_\+port(unsigned short port)}{set_port(unsigned short port)}}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+Info\+::set\+\_\+port (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_info_ab98aef0169df530115e542b1316bf755}{}\label{class_zamasu_1_1_client_info_ab98aef0169df530115e542b1316bf755}
+
+
+Set the \hyperlink{class_zamasu_1_1_client_info_a0072d23fd63fbd8e831556940bd69ce1}{Client\+Info\+::port} attribute. 
+
+
+
+\subsection{Member Data Documentation}
+\index{Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}!hostname@{hostname}}
+\index{hostname@{hostname}!Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}}
+\subsubsection[{\texorpdfstring{hostname}{hostname}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Zamasu\+::\+Client\+Info\+::hostname\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_zamasu_1_1_client_info_a97baa615785948d4f8bc1f31af9ed056}{}\label{class_zamasu_1_1_client_info_a97baa615785948d4f8bc1f31af9ed056}
+
+
+\hyperlink{class_zamasu_1_1_client}{Client}\textquotesingle{}s hostname. 
+
+\index{Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}!id@{id}}
+\index{id@{id}!Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}}
+\subsubsection[{\texorpdfstring{id}{id}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int Zamasu\+::\+Client\+Info\+::id\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_zamasu_1_1_client_info_a70071ec83c0aeca5dbfdfb539ac0c989}{}\label{class_zamasu_1_1_client_info_a70071ec83c0aeca5dbfdfb539ac0c989}
+
+
+ID on server. 
+
+\index{Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}!id\+\_\+count@{id\+\_\+count}}
+\index{id\+\_\+count@{id\+\_\+count}!Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}}
+\subsubsection[{\texorpdfstring{id\+\_\+count}{id_count}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Client\+Info\+::id\+\_\+count = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{class_zamasu_1_1_client_info_a61083b34d39143869cda9bb1ca7aa323}{}\label{class_zamasu_1_1_client_info_a61083b34d39143869cda9bb1ca7aa323}
+
+
+\hyperlink{class_zamasu_1_1_client_info}{Client\+Info} instance counter. 
+
+\index{Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}!port@{port}}
+\index{port@{port}!Zamasu\+::\+Client\+Info@{Zamasu\+::\+Client\+Info}}
+\subsubsection[{\texorpdfstring{port}{port}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short Zamasu\+::\+Client\+Info\+::port\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_zamasu_1_1_client_info_a0072d23fd63fbd8e831556940bd69ce1}{}\label{class_zamasu_1_1_client_info_a0072d23fd63fbd8e831556940bd69ce1}
+
+
+\hyperlink{class_zamasu_1_1_client}{Client}\textquotesingle{}s port. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_client_info_8h}{Client\+Info.\+h}\item 
+\hyperlink{_client_info_8cpp}{Client\+Info.\+cpp}\end{DoxyCompactItemize}

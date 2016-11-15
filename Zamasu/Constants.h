@@ -1,0 +1,6 @@
+#ifndef ZAMASU_CONSTANTS
+#define ZAMASU_CONSTANTS
+
+
+
+#endif

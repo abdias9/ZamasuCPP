@@ -1,0 +1,162 @@
+.TH "Zamasu::ClientInfo" 3 "Tue Nov 15 2016" "Zamasu" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zamasu::ClientInfo \- Basic Class with common attributes for Clients that will be communicating with \fBServer\fP instances\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ClientInfo\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBClientInfo\fP (const char *\fBhostname\fP, unsigned short \fBport\fP)"
+.br
+.ti -1c
+.RI "void \fBset_hostname\fP (const char *\fBhostname\fP)"
+.br
+.RI "\fISet the this->hostname attribute\&. \fP"
+.ti -1c
+.RI "const char * \fBget_hostname\fP ()"
+.br
+.RI "\fIReturn \fBClientInfo::hostname\fP attribute\&. \fP"
+.ti -1c
+.RI "void \fBset_port\fP (unsigned short \fBport\fP)"
+.br
+.RI "\fISet the \fBClientInfo::port\fP attribute\&. \fP"
+.ti -1c
+.RI "unsigned short \fBget_port\fP ()"
+.br
+.RI "\fIReturn \fBClientInfo::port\fP attribute\&. \fP"
+.ti -1c
+.RI "bool \fBoperator==\fP (\fBClientInfo\fP *clientInfo)"
+.br
+.RI "\fICompares to \fBClientInfo\fP instances and return true if hostname and port are the same\&. \fP"
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static unsigned long \fBget_id_count\fP ()"
+.br
+.RI "\fIGet the number of \fBClientInfo\fP instances\&. \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned long int \fBid\fP"
+.br
+.RI "\fIID on server\&. \fP"
+.ti -1c
+.RI "const char * \fBhostname\fP"
+.br
+.RI "\fI\fBClient\fP's hostname\&. \fP"
+.ti -1c
+.RI "unsigned short \fBport\fP"
+.br
+.RI "\fI\fBClient\fP's port\&. \fP"
+.in -1c
+.SS "Static Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "static unsigned long \fBid_count\fP = 1"
+.br
+.RI "\fI\fBClientInfo\fP instance counter\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Basic Class with common attributes for Clients that will be communicating with \fBServer\fP instances\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ClientInfo::ClientInfo (const char * hostname, unsigned short port)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIhostname\fP (ex\&.: 'localhost') 
+.br
+\fIport\fP (ex\&.: 9009) 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const char * ClientInfo::get_hostname ()"
+
+.PP
+Return \fBClientInfo::hostname\fP attribute\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Hostname value 
+.RE
+.PP
+
+.SS "static unsigned long Zamasu::ClientInfo::get_id_count ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get the number of \fBClientInfo\fP instances\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Number of instances\&. 
+.RE
+.PP
+
+.SS "unsigned short ClientInfo::get_port ()"
+
+.PP
+Return \fBClientInfo::port\fP attribute\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Port value 
+.RE
+.PP
+
+.SS "bool ClientInfo::operator== (\fBClientInfo\fP * clientInfo)"
+
+.PP
+Compares to \fBClientInfo\fP instances and return true if hostname and port are the same\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+True if the instances have same attributes\&. 
+.RE
+.PP
+
+.SS "void ClientInfo::set_hostname (const char * hostname)"
+
+.PP
+Set the this->hostname attribute\&. 
+.SS "void ClientInfo::set_port (unsigned short port)"
+
+.PP
+Set the \fBClientInfo::port\fP attribute\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "const char* Zamasu::ClientInfo::hostname\fC [protected]\fP"
+
+.PP
+\fBClient\fP's hostname\&. 
+.SS "unsigned long int Zamasu::ClientInfo::id\fC [protected]\fP"
+
+.PP
+ID on server\&. 
+.SS "unsigned long ClientInfo::id_count = 1\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+\fBClientInfo\fP instance counter\&. 
+.SS "unsigned short Zamasu::ClientInfo::port\fC [protected]\fP"
+
+.PP
+\fBClient\fP's port\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zamasu from the source code\&.

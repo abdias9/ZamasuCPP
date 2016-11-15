@@ -1,0 +1,86 @@
+.TH "Zamasu::Client" 3 "Tue Nov 15 2016" "Zamasu" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zamasu::Client \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ZamasuClient\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBClient\fP (char *host, unsigned short port)"
+.br
+.ti -1c
+.RI "void \fBset_string\fP (std::string key, std::string value)"
+.br
+.ti -1c
+.RI "void \fBset_double\fP (std::string key, double value)"
+.br
+.ti -1c
+.RI "void \fBset_bool\fP (std::string key, bool value)"
+.br
+.ti -1c
+.RI "void \fBincrement_attrib\fP (std::string key, std::string increment)"
+.br
+.ti -1c
+.RI "\fBAttribute\fP * \fBget_attrib\fP (std::string key)"
+.br
+.ti -1c
+.RI "std::map< std::string, \fBAttribute\fP * > \fBget_attributes\fP ()"
+.br
+.ti -1c
+.RI "void \fBrecv\fP ()"
+.br
+.ti -1c
+.RI "bool \fBattributes_loaded\fP ()"
+.br
+.ti -1c
+.RI "void \fBprocess\fP (std::string message)"
+.br
+.ti -1c
+.RI "void \fBstart_recv_thread\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void * \fBcall_recv\fP (void *ptr)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Client::Client (char * host, unsigned short port)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Client::attributes_loaded ()"
+
+.SS "static void* Zamasu::Client::call_recv (void * ptr)\fC [inline]\fP, \fC [static]\fP"
+
+.SS "\fBAttribute\fP * Client::get_attrib (std::string key)"
+
+.SS "std::map< std::string, \fBAttribute\fP * > Client::get_attributes ()"
+
+.SS "void Client::increment_attrib (std::string key, std::string increment)"
+
+.SS "void Client::process (std::string message)"
+
+.SS "void Client::recv ()"
+
+.SS "void Client::set_bool (std::string key, bool value)"
+
+.SS "void Client::set_double (std::string key, double value)"
+
+.SS "void Client::set_string (std::string key, std::string value)"
+
+.SS "void Client::start_recv_thread ()"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zamasu from the source code\&.

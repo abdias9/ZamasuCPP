@@ -1,0 +1,123 @@
+.TH "Zamasu::UDPSocket" 3 "Tue Nov 15 2016" "Zamasu" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zamasu::UDPSocket \- Basic class to send and receive std::string's with UDP protocol\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <UDPSocket\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUDPSocket\fP ()"
+.br
+.RI "\fIMain constructor\&. \fP"
+.ti -1c
+.RI "bool \fBbind\fP (unsigned short \fBport\fP)"
+.br
+.RI "\fIBind a port to start UDP operations\&. \fP"
+.ti -1c
+.RI "bool \fBsend\fP (const char *message, const char *hostname, unsigned short \fBport\fP)"
+.br
+.RI "\fISend message over UDP protocol to hostname\&. \fP"
+.ti -1c
+.RI "\fBMessage\fP \fBrecvfrom\fP (size_t buffsize)"
+.br
+.RI "\fIReceive a \fBZamasu::Message\fP over UDP protocol with a maximum buff size\&. \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBsock\fP"
+.br
+.RI "\fIAF_INET/DGRAM socket\&. \fP"
+.ti -1c
+.RI "unsigned short \fBport\fP"
+.br
+.RI "\fIPort value\&. \fP"
+.ti -1c
+.RI "sockaddr_in \fBaddr\fP"
+.br
+.RI "\fILocal sockadd_in structure\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Basic class to send and receive std::string's with UDP protocol\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "UDPSocket::UDPSocket ()"
+
+.PP
+Main constructor\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool UDPSocket::bind (unsigned short port)"
+
+.PP
+Bind a port to start UDP operations\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+True if succeed\&. 
+.RE
+.PP
+
+.SS "\fBMessage\fP UDPSocket::recvfrom (size_t buffsize)"
+
+.PP
+Receive a \fBZamasu::Message\fP over UDP protocol with a maximum buff size\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbuffsize\fP Maximum message size\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A new \fBZamasu::Message\fP instance\&. 
+.RE
+.PP
+
+.SS "bool UDPSocket::send (const char * message, const char * hostname, unsigned short port)"
+
+.PP
+Send message over UDP protocol to hostname\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImessage\fP \fBMessage\fP to be sended\&. 
+.br
+\fIhostname\fP Destination hostname\&. 
+.br
+\fIport\fP Destination port\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+True if succeed\&. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "sockaddr_in Zamasu::UDPSocket::addr\fC [protected]\fP"
+
+.PP
+Local sockadd_in structure\&. 
+.SS "unsigned short Zamasu::UDPSocket::port\fC [protected]\fP"
+
+.PP
+Port value\&. 
+.SS "int Zamasu::UDPSocket::sock\fC [protected]\fP"
+
+.PP
+AF_INET/DGRAM socket\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zamasu from the source code\&.

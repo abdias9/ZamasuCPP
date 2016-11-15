@@ -1,0 +1,137 @@
+\hypertarget{class_zamasu_1_1_client}{}\section{Zamasu\+:\+:Client Class Reference}
+\label{class_zamasu_1_1_client}\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+
+
+{\ttfamily \#include $<$Zamasu\+Client.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_zamasu_1_1_client_a803e67f82c5fd8ead17b889d4e2f2edd}{Client} (char $\ast$host, unsigned short port)
+\item 
+void \hyperlink{class_zamasu_1_1_client_a7ab2083dcc34e69588340baa3079ea94}{set\+\_\+string} (std\+::string key, std\+::string value)
+\item 
+void \hyperlink{class_zamasu_1_1_client_a8759b38867399148a6e4b1d0d981a1aa}{set\+\_\+double} (std\+::string key, double value)
+\item 
+void \hyperlink{class_zamasu_1_1_client_ae8cfb0aec0e79b6f867d3ab1313740df}{set\+\_\+bool} (std\+::string key, bool value)
+\item 
+void \hyperlink{class_zamasu_1_1_client_a97cc80c21d140e67c81b8fc7ad1c943f}{increment\+\_\+attrib} (std\+::string key, std\+::string increment)
+\item 
+\hyperlink{class_zamasu_1_1_attribute}{Attribute} $\ast$ \hyperlink{class_zamasu_1_1_client_aa3af07c782de29f6184f2251cad4bf57}{get\+\_\+attrib} (std\+::string key)
+\item 
+std\+::map$<$ std\+::string, \hyperlink{class_zamasu_1_1_attribute}{Attribute} $\ast$ $>$ \hyperlink{class_zamasu_1_1_client_a945c68518c6c20f36d3039424aaa548c}{get\+\_\+attributes} ()
+\item 
+void \hyperlink{class_zamasu_1_1_client_a9145ad0948f4016beb356e6905c41a6e}{recv} ()
+\item 
+bool \hyperlink{class_zamasu_1_1_client_ab32e2797b70ff01ee20e68da1f8538a7}{attributes\+\_\+loaded} ()
+\item 
+void \hyperlink{class_zamasu_1_1_client_a2e22bcc53130b02e29c571e41dc88e26}{process} (std\+::string message)
+\item 
+void \hyperlink{class_zamasu_1_1_client_afca4246ebc27a3b94bf32b429464657c}{start\+\_\+recv\+\_\+thread} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \hyperlink{class_zamasu_1_1_client_abd50917a10caf3bf3f471078f327cb42}{call\+\_\+recv} (void $\ast$ptr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}!Client@{Client}}
+\index{Client@{Client}!Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+\subsubsection[{\texorpdfstring{Client(char $\ast$host, unsigned short port)}{Client(char *host, unsigned short port)}}]{\setlength{\rightskip}{0pt plus 5cm}Client\+::\+Client (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{host, }
+\item[{unsigned short}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_a803e67f82c5fd8ead17b889d4e2f2edd}{}\label{class_zamasu_1_1_client_a803e67f82c5fd8ead17b889d4e2f2edd}
+
+
+\subsection{Member Function Documentation}
+\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}!attributes\+\_\+loaded@{attributes\+\_\+loaded}}
+\index{attributes\+\_\+loaded@{attributes\+\_\+loaded}!Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+\subsubsection[{\texorpdfstring{attributes\+\_\+loaded()}{attributes_loaded()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Client\+::attributes\+\_\+loaded (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_ab32e2797b70ff01ee20e68da1f8538a7}{}\label{class_zamasu_1_1_client_ab32e2797b70ff01ee20e68da1f8538a7}
+\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}!call\+\_\+recv@{call\+\_\+recv}}
+\index{call\+\_\+recv@{call\+\_\+recv}!Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+\subsubsection[{\texorpdfstring{call\+\_\+recv(void $\ast$ptr)}{call_recv(void *ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}static void$\ast$ Zamasu\+::\+Client\+::call\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_zamasu_1_1_client_abd50917a10caf3bf3f471078f327cb42}{}\label{class_zamasu_1_1_client_abd50917a10caf3bf3f471078f327cb42}
+\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}!get\+\_\+attrib@{get\+\_\+attrib}}
+\index{get\+\_\+attrib@{get\+\_\+attrib}!Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+\subsubsection[{\texorpdfstring{get\+\_\+attrib(std\+::string key)}{get_attrib(std::string key)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attribute} $\ast$ Client\+::get\+\_\+attrib (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_aa3af07c782de29f6184f2251cad4bf57}{}\label{class_zamasu_1_1_client_aa3af07c782de29f6184f2251cad4bf57}
+\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}!get\+\_\+attributes@{get\+\_\+attributes}}
+\index{get\+\_\+attributes@{get\+\_\+attributes}!Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+\subsubsection[{\texorpdfstring{get\+\_\+attributes()}{get_attributes()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$ std\+::string, {\bf Attribute} $\ast$ $>$ Client\+::get\+\_\+attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_a945c68518c6c20f36d3039424aaa548c}{}\label{class_zamasu_1_1_client_a945c68518c6c20f36d3039424aaa548c}
+\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}!increment\+\_\+attrib@{increment\+\_\+attrib}}
+\index{increment\+\_\+attrib@{increment\+\_\+attrib}!Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+\subsubsection[{\texorpdfstring{increment\+\_\+attrib(std\+::string key, std\+::string increment)}{increment_attrib(std::string key, std::string increment)}}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+::increment\+\_\+attrib (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{key, }
+\item[{std\+::string}]{increment}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_a97cc80c21d140e67c81b8fc7ad1c943f}{}\label{class_zamasu_1_1_client_a97cc80c21d140e67c81b8fc7ad1c943f}
+\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}!process@{process}}
+\index{process@{process}!Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+\subsubsection[{\texorpdfstring{process(std\+::string message)}{process(std::string message)}}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+::process (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{message}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_a2e22bcc53130b02e29c571e41dc88e26}{}\label{class_zamasu_1_1_client_a2e22bcc53130b02e29c571e41dc88e26}
+\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}!recv@{recv}}
+\index{recv@{recv}!Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+\subsubsection[{\texorpdfstring{recv()}{recv()}}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+::recv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_a9145ad0948f4016beb356e6905c41a6e}{}\label{class_zamasu_1_1_client_a9145ad0948f4016beb356e6905c41a6e}
+\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}!set\+\_\+bool@{set\+\_\+bool}}
+\index{set\+\_\+bool@{set\+\_\+bool}!Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+\subsubsection[{\texorpdfstring{set\+\_\+bool(std\+::string key, bool value)}{set_bool(std::string key, bool value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+::set\+\_\+bool (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{key, }
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_ae8cfb0aec0e79b6f867d3ab1313740df}{}\label{class_zamasu_1_1_client_ae8cfb0aec0e79b6f867d3ab1313740df}
+\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}!set\+\_\+double@{set\+\_\+double}}
+\index{set\+\_\+double@{set\+\_\+double}!Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+\subsubsection[{\texorpdfstring{set\+\_\+double(std\+::string key, double value)}{set_double(std::string key, double value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+::set\+\_\+double (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{key, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_a8759b38867399148a6e4b1d0d981a1aa}{}\label{class_zamasu_1_1_client_a8759b38867399148a6e4b1d0d981a1aa}
+\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}!set\+\_\+string@{set\+\_\+string}}
+\index{set\+\_\+string@{set\+\_\+string}!Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+\subsubsection[{\texorpdfstring{set\+\_\+string(std\+::string key, std\+::string value)}{set_string(std::string key, std::string value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+::set\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{key, }
+\item[{std\+::string}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_a7ab2083dcc34e69588340baa3079ea94}{}\label{class_zamasu_1_1_client_a7ab2083dcc34e69588340baa3079ea94}
+\index{Zamasu\+::\+Client@{Zamasu\+::\+Client}!start\+\_\+recv\+\_\+thread@{start\+\_\+recv\+\_\+thread}}
+\index{start\+\_\+recv\+\_\+thread@{start\+\_\+recv\+\_\+thread}!Zamasu\+::\+Client@{Zamasu\+::\+Client}}
+\subsubsection[{\texorpdfstring{start\+\_\+recv\+\_\+thread()}{start_recv_thread()}}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+::start\+\_\+recv\+\_\+thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_zamasu_1_1_client_afca4246ebc27a3b94bf32b429464657c}{}\label{class_zamasu_1_1_client_afca4246ebc27a3b94bf32b429464657c}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_zamasu_client_8h}{Zamasu\+Client.\+h}\item 
+\hyperlink{_zamasu_client_8cpp}{Zamasu\+Client.\+cpp}\end{DoxyCompactItemize}
